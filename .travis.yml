@@ -1,11 +1,9 @@
 language: node_js
 node_js:
 - stable
-cache:
-  directories:
-  - node_modules
+
 script:
-- npm test
+- npm install
 - npm run build
 
 deploy:
@@ -13,6 +11,6 @@ deploy:
   project: "./build/"
   api_key:	
     secure: rIHVxXiyiO+KL0X3vk7p96aBpH9Rs1GXktGlxMOJfr+RtLHqnvEU9q1mBBivfNImH2kM5yMjaSaFVtk6ojbNAILt2GS1foh6xIX63f9Pshv6mt8FbaL+msmyieiwG5JTE+vm+tJeC8a94g6iKXEwzlOKHfT0FfWc3TAfEbBJUmam6fPL35L3wZoGQFQ3H7xIJ3KT7OQIy9faZHjMAo/5pDWeibAj375IHoBJ8DAjHW+c+9X05KF42JOgMd0eK996Z73xpX1wC+fLTEEUAjp0Jj7Qcffw8JJjU/BjHB8Zc7OFbcuAcEJ2Pu9XdTp9INhbJCmuqtLFmxACZs1Iq7dKfVFe75/9BDueT/oi4h0l4SES2jFMv1u1w6EfQ/pCQ0EiP7HqUEQto80RJBJUO8VCTnp04JDfvOnR2aFZv1jhGRESMUZ7sJRjSehG2R25WzsLFIB75Lw5AAS8wXyeLfMWsDnU9GvgH7JIFBRrnKPwwDp1y2V3UqemHxjgwffUsECN+A+8AX6mmfZABnG7gRfY/EhvgWg5xLNuKd7jk5RiMLLUEc3LZfVnpBZ30mwcf6bxR7dhuAzXF41ANaaPHnOGMGDoLiHlmvg8OxBJ/pbErx72DUP6n4zMehOYW0xs7Lo0A+Qjk3D1gQz6DPk2EV4LPm9Yx3YfZJ0HkBkdRTU/YHg=
-  app: merchstore1
+  app: react-crypto-dashboard
   on:
     repo: fablerq/ReactCryptoDashboard
